@@ -1,0 +1,26 @@
+<single-spa-router>
+  <main>
+    <header>
+      <a href="/" onclick="singleSpaNavigate(event)">Home</a>
+      <a
+        href="/stocks"
+        onclick="singleSpaNavigate(event)"
+        >Stocks</a
+      >
+      <a href="/crypto" onclick="singleSpaNavigate(event)">Crypto</a>
+      <span class="greeting">Hello, user!</span>
+    </header>
+
+    <route path="stocks">
+      <application name="stocks"></application>
+    </route>
+    <route path="crypto">
+      <application name="crypto"></application>
+    </route>
+    <route default>
+      <div style="font-size: 22px">
+          Hello, investor! This your dashboard page!
+      </div>
+    </route>
+  </main>
+</single-spa-router>

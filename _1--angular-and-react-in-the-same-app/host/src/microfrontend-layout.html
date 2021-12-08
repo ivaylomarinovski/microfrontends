@@ -1,0 +1,26 @@
+<single-spa-router>
+  <main>
+    <header>
+      <a href="/" onclick="singleSpaNavigate(event)">Home</a>
+      <a
+        href="angular-app"
+        onclick="singleSpaNavigate(event)"
+        >Angular app</a
+      >
+      <a href="react-app" onclick="singleSpaNavigate(event)">React app</a>
+      <span class="greeting">Hello, user!</span>
+    </header>
+
+    <route path="angular-app">
+      <application name="angular12-project"></application>
+    </route>
+    <route path="react-app">
+      <application name="crypto-investments"></application>
+    </route>
+    <route default>
+      <div style="font-size: 22px">
+          Hello world from the landing page!
+      </div>
+    </route>
+  </main>
+</single-spa-router>

@@ -1,0 +1,13 @@
+.table {
+  width: 400px;
+}
+.row {
+  display: inline-block;
+  width: 400px;
+}
+.stock {
+  float: left;
+}
+.value {
+  float: right;
+}
